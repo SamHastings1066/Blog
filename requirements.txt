@@ -11,6 +11,7 @@ Flask-Login==0.6.2
 Flask-SQLAlchemy==3.0.3
 Flask-WTF==1.1.1
 greenlet==2.0.2
+gunicorn @ file:///Users/builder/ci_310/gunicorn_1642504456862/work
 idna==3.4
 itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
 Jinja2 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6adj7x0ejx/croot/jinja2_1666908137966/work
