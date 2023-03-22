@@ -1,23 +1,47 @@
-certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
-click @ file:///opt/concourse/worker/volumes/live/2d66025a-4d79-47c4-43be-6220928b6c82/volume/click_1646056610594/work
-dnspython==2.3.0
-dominate==2.7.0
-email-validator==1.3.1
-Flask @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4eo947bliu/croot/flask_1671217361971/work
-Flask-Bootstrap==3.3.7.1
-Flask-CKEditor==0.4.6
-Flask-Gravatar==0.5.0
-Flask-Login==0.6.2
-Flask-SQLAlchemy==3.0.3
-Flask-WTF==1.1.1
-greenlet==2.0.2
-gunicorn @ file:///Users/builder/ci_310/gunicorn_1642504456862/work
-idna==3.4
-itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
-Jinja2 @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6adj7x0ejx/croot/jinja2_1666908137966/work
-MarkupSafe @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d4a9444f-bd4c-4043-b47d-cede33979b0fve7bm42r/croots/recipe/markupsafe_1654597878200/work
-SQLAlchemy==2.0.6
-typing_extensions==4.5.0
-visitor==0.1.3
-Werkzeug @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_322nlonnpf/croot/werkzeug_1671215993374/work
-WTForms==3.0.1
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+bzip2=1.0.8=h1de35cc_0
+ca-certificates=2023.01.10=hecd8cb5_0
+certifi=2022.12.7=py310hecd8cb5_0
+charset-normalizer=3.1.0=pypi_0
+click=8.0.4=py310hecd8cb5_0
+dnspython=2.3.0=pypi_0
+docopt=0.6.2=pypi_0
+dominate=2.7.0=pypi_0
+email-validator=1.3.1=pypi_0
+flask=2.2.2=py310hecd8cb5_0
+flask-bootstrap=3.3.7.1=pypi_0
+flask-ckeditor=0.4.6=pypi_0
+flask-gravatar=0.5.0=pypi_0
+flask-login=0.6.2=pypi_0
+flask-sqlalchemy=3.0.3=pypi_0
+flask-wtf=1.1.1=pypi_0
+greenlet=2.0.2=pypi_0
+gunicorn=20.1.0=py310hecd8cb5_0
+idna=3.4=pypi_0
+itsdangerous=2.0.1=pyhd3eb1b0_0
+jinja2=3.1.2=py310hecd8cb5_0
+libffi=3.4.2=hecd8cb5_6
+markupsafe=2.1.1=py310hca72f7f_0
+ncurses=6.4=hcec6c5f_0
+openssl=1.1.1t=hca72f7f_0
+pip=23.0.1=py310hecd8cb5_0
+pipreqs=0.4.11=pypi_0
+python=3.10.9=h218abb5_2
+readline=8.2=hca72f7f_0
+requests=2.28.2=pypi_0
+setuptools=65.6.3=py310hecd8cb5_0
+sqlalchemy=2.0.6=pypi_0
+sqlite=3.41.1=h6c40b1e_0
+tk=8.6.12=h5d9f67b_0
+typing-extensions=4.5.0=pypi_0
+tzdata=2022g=h04d1e81_0
+urllib3=1.26.15=pypi_0
+visitor=0.1.3=pypi_0
+werkzeug=2.2.2=py310hecd8cb5_0
+wheel=0.38.4=py310hecd8cb5_0
+wtforms=3.0.1=pypi_0
+xz=5.2.10=h6c40b1e_1
+yarg=0.1.9=pypi_0
+zlib=1.2.13=h4dc903c_0
