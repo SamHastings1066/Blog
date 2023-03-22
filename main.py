@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template, redirect, url_for, flash, abort
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
@@ -13,12 +15,18 @@ from functools import wraps
 
 app = Flask(__name__)
 db = SQLAlchemy()
-app.config['SECRET_KEY'] = 'purple haze'
+if os.environ.get("DATABASE_URL")==None:
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL",  "sqlite:///blog.db")
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'purple haze')
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
+
+# 'sqlite:///blog.db'
 # CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
@@ -192,11 +200,13 @@ def add_new_post():
     return render_template("make-post.html", form=form)
 
 
-@app.route("/edit-post/<int:post_id>")
+@app.route("/edit-post/<int:post_id>", methods=["GET", "POST"])
 @login_required
 @admin_only
 def edit_post(post_id):
+    print("GGGGGGEEEEETTTTTSSSS HHHEEERRRRREEE")
     post = BlogPost.query.get(post_id)
+    print("gets here")
     edit_form = CreatePostForm(
         title=post.title,
         subtitle=post.subtitle,
